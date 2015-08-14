@@ -16,4 +16,8 @@ demoApp.controller('demoController', ['$scope','$http', function($scope,$http) {
   		//Why if I put it right here will have issue
   		//alert($scope.data[0].id);
   	};
+
+  	  $scope.DemoRestButton = function(){
+  		//use resource
+  	};
 }]);
