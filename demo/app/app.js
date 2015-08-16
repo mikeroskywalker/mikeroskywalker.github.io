@@ -4,6 +4,6 @@
 angular.module('angularDemoApp', ['ngRoute','ngResource']).
 	config(['$routeProvider', function($routeProvider) {
 
-	  	$routeProvider.otherwise({
+		$routeProvider.otherwise({
 	  		templateUrl: 'demoview/demoview.html'});
 	}]);
