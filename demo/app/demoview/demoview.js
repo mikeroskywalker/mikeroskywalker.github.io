@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('angularDemoApp').controller('demoController', ['$scope','$http', '$resource',
+angular.module('angularDemoApp.controller',['ngResource']).controller('demoController', ['$scope','$http', '$resource',
 	function($scope,$http,$resource) {
 	  	$scope.Test = "Show me as a demo";
 
