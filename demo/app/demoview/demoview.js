@@ -17,7 +17,9 @@ angular.module('angularDemoApp.controller',['ngResource']).controller('demoContr
 	  	};
 
 	  	  $scope.DemoRestButton = function(){
-	  		var Testmsg =  $resource('localhost:8000/api/v1/test/:id')
+	  		var Testmsg = $resource('http://www.localhost:8000/api/v1/test/:id',{},{
+          		query: {method:'GET',isArray:false}
+	  		});
 	  		var msgs = Testmsg.query(function(){
 	  			console.log(msgs);
 	  		});
