@@ -1,23 +1,25 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-var demoApp = angular.module('angularDemoApp');
+angular.module('angularDemoApp').controller('demoController', ['$scope','$http', '$resource',
+	function($scope,$http,$resource) {
+	  	$scope.Test = "Show me as a demo";
 
-demoApp.controller('demoController', ['$scope','$http', function($scope,$http) {
-  	$scope.Test = "Show me as a demo";
+	  	$scope.DemoButton = function(){
+	  		$http.get("demoview/mockdata.json")
+	  		.success(function(data){
+	  			$scope.data = data;
+	  			 alert($scope.data[0].id);
 
-  	$scope.DemoButton = function(){
-  		$http.get("demoview/mockdata.json")
-  		.success(function(data){
-  			$scope.data = data;
-  			 alert($scope.data[0].id);
+	  		});
+	  		//Why if I put it right here will have issue
+	  		//alert($scope.data[0].id);
+	  	};
 
-  		});
-  		//Why if I put it right here will have issue
-  		//alert($scope.data[0].id);
-  	};
-
-  	  $scope.DemoRestButton = function(){
-  		//use resource
-  	};
-}]);
+	  	  $scope.DemoRestButton = function(){
+	  		var Testmsg =  $resource('localhost:8000/api/v1/test/:id')
+	  		var msgs = Testmsg.query(function(){
+	  			console.log(msgs);
+	  		});
+	  	};
+	}]);
