@@ -24,4 +24,14 @@ angular.module('angularDemoApp.controller',['ngResource']).controller('demoContr
 	  			console.log(msgs);
 	  		});
 	  	};
+
+	  	$scope.DemoRestPostButton = function(){
+	  		var data = {};
+	  		data.test = "test";
+	  		data.id = "test";
+	  		
+	  		$http.post("http://www.localhost:8000/api/v1/test",data).success(function(response){
+	  			alert(response);
+	  		})
+	  	};
 	}]);
