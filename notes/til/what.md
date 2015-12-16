@@ -5,5 +5,5 @@ Dec 11 2015:
 Dec 12 2015:
 [Markdown help documentation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers)
 
-Dec 13 2015:
+Dec 13 2015:\s\s
 [Compose complex, data-driven visualizations from reusable charts and components with d3.](http://csnw.github.io/d3.compose/)
