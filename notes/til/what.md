@@ -8,3 +8,6 @@ Dec 12 2015:
 
 Dec 13 2015:  
 [Compose complex, data-driven visualizations from reusable charts and components with d3.](http://csnw.github.io/d3.compose/)
+
+Dec 18 2015:  
+[684.8 TB of data is up for grabs due to publicly exposed MongoDB databases](https://blog.shodan.io/its-still-the-data-stupid/)
