@@ -11,3 +11,6 @@ Dec 13 2015:
 
 Dec 18 2015:  
 [684.8 TB of data is up for grabs due to publicly exposed MongoDB databases](https://blog.shodan.io/its-still-the-data-stupid/)
+
+Jan 12 2016:
+[Top 100 Best Blogs for iOS Developers to Learn and Gain Insights](http://www.softwarehow.com/best-blogs-for-ios-developers/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
