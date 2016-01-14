@@ -14,3 +14,6 @@ Dec 18 2015:
 
 Jan 12 2016:
 [Top 100 Best Blogs for iOS Developers to Learn and Gain Insights](http://www.softwarehow.com/best-blogs-for-ios-developers/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+
+Jan 14 2016:
+[I wrote a simple tool to show the headers from GET-ing a URL in Go](https://github.com/carlmjohnson/get-headers)
